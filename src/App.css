@@ -1,38 +1,68 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  background-color: white;
+}
+
+/* heading */
+
+h1{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* main box in which stop timer will show */
+
+.box{
+  background-color: #ffe69a;
+  width: 60%;
+  min-width: 500px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  padding: 60px 0;
+  border-radius: 12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* display time */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.timeDisplay{
+  position: relative;
+  width: 110%;
+  left: -5%;
+  padding: 40px 0;
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Roboto mono',monospace;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  border-radius: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.buttons{
+  width: 80%;
+  margin: 60px auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+button i {
+  font-size: 16px;
 }
